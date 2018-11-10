@@ -1,5 +1,5 @@
-# TopSeattleStocks
-Top Seattle companies stocks data as an Alexa flash briefing skill.
+# Top Seattle Companies Stock Data as Alexa Flash Briefing
+Top Seattle companies stock data (latest price, change%) as an Alexa flash briefing skill.
 
 ## Description
 This repository is to share my learnings while building an Alexa flash briefing skill 'Seattle Companies Stock' using a free stock quotes API.
@@ -26,16 +26,18 @@ I have achieved the automatic generation of my feed file using **AWS Lambda + AW
 6. **Scheduled** to trigger my **AWS Lambda** function using **AWS Cloudwatch** event scheduler.
 
 ## References:
-My Alexa Flash Briefing skill - https://www.amazon.com/ERBABU-Seattle-Companies-Stock/dp/B07K4BPTTJ
-Companies Info - https://en.wikipedia.org/wiki/List_of_companies_based_in_Seattle
-API - https://iextrading.com/developer/
-API - https://www.alphavantage.co/
-Alexa skill details - https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html
-Alexa Flash briefing skill JSON feed reference - https://developer.amazon.com/docs/flashbriefing/flash-briefing-skill-api-feed-reference.html
-AWS Lambda + S3 + Node.js - https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
-AWS CLI - https://aws.amazon.com/cli/
-Scheduling AWS Lambda using AWS Cloudwatch - https://docs.aws.amazon.com/lambda/latest/dg/with-scheduled-events.html
-Alexa Github - https://github.com/alexa
-Alexa skill building help - https://alexaincanada.ca/how-to-create-a-flash-briefing-for-alexa/
-Alexa skill building help - https://www.socialmediaexaminer.com/how-to-set-up-an-alexa-flash-briefing-a-guide-for-marketers/
-JSON Editor online - https://jsoneditoronline.org/
+Info | Link
+---- | ----
+My Alexa Flash Briefing skill | https://www.amazon.com/ERBABU-Seattle-Companies-Stock/dp/B07K4BPTTJ
+Companies Info | https://en.wikipedia.org/wiki/List_of_companies_based_in_Seattle
+Stock data API | https://iextrading.com/developer/
+Stock data API | https://www.alphavantage.co/
+Alexa skill details | https://developer.amazon.com/docs/flashbriefing/understand-the-flash-briefing-skill-api.html
+Alexa Flash briefing skill JSON feed reference | https://developer.amazon.com/docs/flashbriefing/flash-briefing-skill-api-feed-reference.html
+AWS Lambda + S3 + Node.js | https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
+AWS CLI | https://aws.amazon.com/cli/
+Scheduling AWS Lambda using AWS Cloudwatch | https://docs.aws.amazon.com/lambda/latest/dg/with-scheduled-events.html
+Alexa Github | https://github.com/alexa
+Alexa skill building help | https://alexaincanada.ca/how-to-create-a-flash-briefing-for-alexa/
+Alexa skill building help | https://www.socialmediaexaminer.com/how-to-set-up-an-alexa-flash-briefing-a-guide-for-marketers/
+JSON Editor online | https://jsoneditoronline.org/
