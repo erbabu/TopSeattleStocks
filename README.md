@@ -1,12 +1,12 @@
 # TopSeattleStocks
 Top Seattle companies stocks data as an Alexa flash briefing skill.
 
-##Description
+## Description
 This repository is to share my learnings while building an Alexa flash briefing skill 'Seattle Companies Stock' using a free stock quotes API.
 
 **Alexa Flash Briefing skill:** https://www.amazon.com/ERBABU-Seattle-Companies-Stock/dp/B07K4BPTTJ
 
-##Steps
+## Steps
 Following is what I have followed to build this skill.
 1. Decided on what I want to render in flash briefing. I wanted to render dynamic content, at the same time using some third party API, so that I can use this project for self-learning. So, picked up stock quote API. To limit the count of stock quotes, restricted to top Seattle area companies based on my interest from the list available in Wikipedia.
 2. Read and understood the Alexa flash briefing skill online document.
@@ -16,7 +16,7 @@ Following is what I have followed to build this skill.
 6. Tested and submitted for certification. It's **live** now.
 7. Till I finish the program for automatically updating the feed file in S3 bucket, I was updating the feed file manually with new content frequently.
 
-###Iterations
+### Iterations
 I have achieved the automatic generation of my feed file using **AWS Lambda + AWS S3 SDK + Node.js + Async js** library. Following are the iterations to reach the final goal.
 1. Wrote a simple HTML page to generate the feed file contents using js and **XMLHTTPRequest for REST API** calls. I used the stock API from iextrading.com (benefit is, there is no authentication for calling API, ofcourse there is a burst limit and throttling limit per day per IP). Using this content, I was updating my S3 file instead of manually updating all 12 company stock quotes data by hand.
 2. Wrote node.js program in local environment for generating the feed file and transferred using AWS CLI to my S3 bucket.
@@ -25,7 +25,7 @@ I have achieved the automatic generation of my feed file using **AWS Lambda + AW
 5. Ran the test for sometime and verified the JSON contents using the free online tool (jsoneditoronline).
 6. **Scheduled** to trigger my **AWS Lambda** function using **AWS Cloudwatch** event scheduler.
 
-##References:
+## References:
 My Alexa Flash Briefing skill - https://www.amazon.com/ERBABU-Seattle-Companies-Stock/dp/B07K4BPTTJ
 Companies Info - https://en.wikipedia.org/wiki/List_of_companies_based_in_Seattle
 API - https://iextrading.com/developer/
